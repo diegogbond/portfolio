@@ -17,8 +17,8 @@
   <nav class="nav" id="nav">
     <div class="nav__inner">
       <a href="#hero" class="nav__logo">
-        <img src="logo.png" alt="GreenBond" class="nav__logo-img nav__logo-img--dark" />
-        <img src="logo-white.png" alt="GreenBond" class="nav__logo-img nav__logo-img--white" />
+        <img src="logo-colored.svg" alt="GreenBond" class="nav__logo-img nav__logo-img--dark" />
+        <img src="logo-white.svg"   alt="GreenBond" class="nav__logo-img nav__logo-img--white" />
       </a>
       <ul class="nav__links">
         <li><a href="#sobre">A GreenBond</a></li>
@@ -38,6 +38,7 @@
     <div class="hero__bg"></div>
     <div class="container hero__grid">
       <div class="hero__content">
+        <span class="hero__tag">Comunicação &amp; Conservação</span>
         <h1 class="hero__title">Da conexão<br />à <span class="highlight">conservação</span></h1>
         <p class="hero__subtitle">
           Usando a comunicação e marketing para transformar o futuro da biodiversidade.
@@ -47,16 +48,25 @@
         </p>
         <div class="hero__actions">
           <a href="#servicos" class="btn btn--primary">O que fazemos</a>
-          <a href="#contato" class="btn btn--outline">Fale conosco</a>
+          <a href="#contato"  class="btn btn--outline">Fale conosco</a>
         </div>
       </div>
       <div class="hero__visual">
-        <div class="hero__card hero__card--1"><span class="card-icon">🌿</span><p>Conservação Ambiental</p></div>
-        <div class="hero__card hero__card--2"><span class="card-icon">📱</span><p>Mídias Sociais</p></div>
-        <div class="hero__card hero__card--3"><span class="card-icon">🎯</span><p>Google Ad Grants</p></div>
+        <div class="hero__card hero__card--1">
+          <i class="fa fa-leaf card-icon"></i>
+          <p>Conservação Ambiental</p>
+        </div>
         <div class="hero__badge">
-          <span>GreenBond</span>
+          <img src="logo-white.svg" alt="GreenBond" style="height:38px;width:auto;display:block;margin:0 auto 10px;" />
           <small>Da conexão à conservação</small>
+        </div>
+        <div class="hero__card hero__card--2">
+          <i class="fa fa-mobile card-icon"></i>
+          <p>Mídias Sociais</p>
+        </div>
+        <div class="hero__card hero__card--3">
+          <i class="fa fa-bullseye card-icon"></i>
+          <p>Google Ad Grants</p>
         </div>
       </div>
     </div>
@@ -71,11 +81,13 @@
     <div class="container">
       <div class="sobre__grid">
         <div class="sobre__image-wrap">
-          <div class="sobre__image-placeholder"><span>GB</span></div>
+          <div class="sobre__image-container">
+            <img src="simbolo.svg" alt="GreenBond" class="sobre__simbolo" />
+          </div>
           <div class="sobre__badge-wrap">
             <div class="sobre__stat">
               <strong>@greenbondconservation</strong>
-              <span>Instagram & Facebook</span>
+              <span>Instagram &amp; Facebook</span>
             </div>
           </div>
         </div>
@@ -121,7 +133,7 @@
       <div class="servicos__grid">
 
         <div class="servico-card">
-          <div class="servico-card__icon">📱</div>
+          <div class="servico-card__icon"><i class="fa fa-mobile"></i></div>
           <h3>Mídias sociais</h3>
           <p>Criação de conteúdo, engajamento com seguidores e gerenciamento de plataformas para ampliar a presença digital da sua organização.</p>
           <ul>
@@ -133,7 +145,7 @@
         </div>
 
         <div class="servico-card">
-          <div class="servico-card__icon">🌐</div>
+          <div class="servico-card__icon"><i class="fa fa-globe"></i></div>
           <h3>Websites</h3>
           <p>Desenvolvimento e reestruturação de sites de alta performance para uma presença online que representa sua organização com qualidade.</p>
           <ul>
@@ -145,7 +157,7 @@
         </div>
 
         <div class="servico-card servico-card--featured">
-          <div class="servico-card__icon">🎯</div>
+          <div class="servico-card__icon"><i class="fa fa-bullseye"></i></div>
           <h3>Google Ad Grants</h3>
           <p>Criação e manutenção de campanhas no Google Ads oferecendo para ONGs até <strong>U$ 10.000 por mês</strong> em anúncios gratuitos.</p>
           <ul>
@@ -158,7 +170,7 @@
         </div>
 
         <div class="servico-card">
-          <div class="servico-card__icon">✍️</div>
+          <div class="servico-card__icon"><i class="fa fa-pencil-square-o"></i></div>
           <h3>Blogs</h3>
           <p>Criação de conteúdo otimizado para SEO com o objetivo de aumentar o engajamento e a relevância do seu projeto.</p>
           <ul>
@@ -170,7 +182,7 @@
         </div>
 
         <div class="servico-card">
-          <div class="servico-card__icon">📣</div>
+          <div class="servico-card__icon"><i class="fa fa-bullhorn"></i></div>
           <h3>Estratégia de comunicação</h3>
           <p>Desenvolvimento de um plano de comunicação personalizado para posicionar sua organização e ampliar sua influência.</p>
           <ul>
@@ -204,13 +216,11 @@
           <div class="case-card__body">
             <span class="case-card__client">Instituto SOS Pantanal</span>
             <h3>Comunicação estratégica para o maior santuário de vida silvestre</h3>
-            <p>
-              Assessoria de comunicação completa para o Instituto SOS Pantanal — identidade visual, planejamento editorial, gestão de presença digital e comunicação institucional para parceiros nacionais e internacionais.
-            </p>
+            <p>Assessoria de comunicação completa — identidade visual, planejamento editorial, gestão de presença digital e comunicação institucional para parceiros nacionais e internacionais.</p>
             <div class="case-card__results">
               <div class="result-item"><strong>Identidade</strong><span>visual completa</span></div>
               <div class="result-item"><strong>Presença</strong><span>digital estratégica</span></div>
-              <div class="result-item"><strong>Alcance</strong><span>nacional & internacional</span></div>
+              <div class="result-item"><strong>Alcance</strong><span>nacional &amp; internacional</span></div>
             </div>
             <div class="case-card__tags">
               <span>Assessoria</span><span>Identidade Visual</span><span>Conteúdo</span>
@@ -338,7 +348,7 @@
           <p>Sua organização merece uma comunicação à altura da sua missão. Fale com a nossa equipe.</p>
           <div class="contato__info">
             <div class="contato__item">
-              <span class="contato__icon">📞</span>
+              <i class="fa fa-phone contato__icon"></i>
               <div>
                 <strong>Telefone</strong>
                 <a href="tel:+5511995643446">(11) 9 9564-3446</a>
@@ -346,14 +356,14 @@
               </div>
             </div>
             <div class="contato__item">
-              <span class="contato__icon">📧</span>
+              <i class="fa fa-envelope contato__icon"></i>
               <div>
                 <strong>E-mail</strong>
                 <a href="mailto:contato@greenbond.com.br">contato@greenbond.com.br</a>
               </div>
             </div>
             <div class="contato__item">
-              <span class="contato__icon">📸</span>
+              <i class="fa fa-instagram contato__icon"></i>
               <div>
                 <strong>Redes sociais</strong>
                 <a href="https://instagram.com/greenbondconservation" target="_blank" rel="noopener">@greenbondconservation</a>
@@ -405,14 +415,14 @@
     <div class="container">
       <div class="footer__inner">
         <div class="footer__brand">
-          <img src="logo-white.png" alt="GreenBond" style="height:36px;margin-bottom:8px" />
+          <img src="logo-white.svg" alt="GreenBond" style="height:36px;width:auto;display:block;margin-bottom:10px;" />
           <p>Da conexão à conservação.</p>
           <div class="footer__social">
             <a href="https://instagram.com/greenbondconservation" target="_blank" rel="noopener" aria-label="Instagram">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              <i class="fa fa-instagram"></i>
             </a>
             <a href="https://facebook.com/greenbondconservation" target="_blank" rel="noopener" aria-label="Facebook">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              <i class="fa fa-facebook"></i>
             </a>
           </div>
         </div>
@@ -457,11 +467,9 @@
   </a>
 
   <script>
-    // Nav scroll
     const nav = document.getElementById('nav');
     window.addEventListener('scroll', () => nav.classList.toggle('nav--scrolled', window.scrollY > 50));
 
-    // Mobile menu
     const toggle = document.getElementById('navToggle');
     const navLinks = document.querySelector('.nav__links');
     toggle.addEventListener('click', () => {
@@ -475,7 +483,6 @@
       });
     });
 
-    // Scroll reveal
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
     }, { threshold: 0.08 });
@@ -484,7 +491,6 @@
       observer.observe(el);
     });
 
-    // Smooth scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -493,7 +499,6 @@
       });
     });
 
-    // Form submit — abre WhatsApp com os dados
     function enviarFormulario(e) {
       e.preventDefault();
       const nome = document.getElementById('nome').value;
