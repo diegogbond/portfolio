@@ -396,6 +396,16 @@ ul  { list-style: none; }
   padding: 5px 14px;
   border-radius: 100px;
 }
+.sobre__numeros {
+  display: flex;
+  gap: 32px;
+  margin-top: 28px;
+  padding-top: 28px;
+  border-top: 1px solid var(--gb-gray-light);
+}
+.sobre__num { display: flex; flex-direction: column; }
+.sobre__num strong { font-size: 1.8rem; font-weight: 800; color: var(--gb-green); line-height: 1; }
+.sobre__num span   { font-size: .8rem; color: var(--gb-graphite-l); margin-top: 4px; }
 
 /* ===== SERVIÇOS ===== */
 .servicos { background: var(--gb-gray-light); }
@@ -600,47 +610,81 @@ ul  { list-style: none; }
 .contato { background: var(--gb-graphite); color: var(--white); }
 .contato__inner {
   display: grid;
-  grid-template-columns: 1fr 420px;
-  gap: 80px;
-  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
 }
 .contato__content .section__title { margin-bottom: 16px; }
-.contato__content p { color: rgba(255,255,255,.72); font-size: 1.05rem; margin-bottom: 36px; }
-.contato__info { display: flex; flex-direction: column; gap: 20px; }
-.contato__item { display: flex; align-items: center; gap: 16px; color: rgba(255,255,255,.85); }
-.contato__icon { font-size: 1.4rem; flex-shrink: 0; }
-.contato__item strong { display: block; font-weight: 700; color: var(--white); font-size: .88rem; }
-.contato__item a, .contato__item span { font-size: .92rem; color: rgba(255,255,255,.7); }
+.contato__content > p { color: rgba(255,255,255,.72); font-size: 1.05rem; margin-bottom: 36px; }
+.contato__info { display: flex; flex-direction: column; gap: 24px; }
+.contato__item { display: flex; align-items: flex-start; gap: 16px; color: rgba(255,255,255,.85); }
+.contato__icon { font-size: 1.4rem; flex-shrink: 0; margin-top: 2px; }
+.contato__item strong { display: block; font-weight: 700; color: var(--white); font-size: .85rem; margin-bottom: 4px; }
+.contato__item a { display: block; font-size: .9rem; color: rgba(255,255,255,.65); transition: var(--transition); }
 .contato__item a:hover { color: var(--gb-lime); }
-.contato__card {
-  background: var(--white);
-  border-radius: var(--radius-lg);
-  padding: 40px 32px;
-  text-align: center;
-  box-shadow: 0 20px 60px rgba(0,0,0,.2);
+.contato__item span { font-size: .9rem; color: rgba(255,255,255,.65); }
+
+/* Form */
+.contato__form-wrap { background: var(--white); border-radius: var(--radius-lg); padding: 36px 32px; box-shadow: 0 20px 60px rgba(0,0,0,.2); }
+.contato__form { display: flex; flex-direction: column; gap: 16px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-group label { font-size: .82rem; font-weight: 600; color: var(--gb-graphite); }
+.form-group input,
+.form-group textarea {
+  padding: 11px 14px;
+  border: 1.5px solid var(--gb-gray-mid);
+  border-radius: var(--radius);
+  font-size: .9rem;
+  font-family: var(--font);
+  color: var(--gb-graphite);
+  background: var(--gb-offwhite);
+  transition: var(--transition);
+  outline: none;
+  resize: vertical;
 }
-.contato__card h3 { font-size: 1.25rem; font-weight: 700; margin-bottom: 12px; color: var(--gb-graphite); }
-.contato__card p  { color: var(--gb-graphite-l); font-size: .88rem; margin-bottom: 4px; }
-.contato__card-note { font-size: .78rem; color: var(--gb-graphite-l); margin-top: 16px; font-style: italic; }
+.form-group input:focus,
+.form-group textarea:focus { border-color: var(--gb-green); background: var(--white); box-shadow: 0 0 0 3px rgba(56,142,60,.12); }
+.btn--submit {
+  background: var(--gb-green);
+  color: var(--white);
+  border: 2px solid var(--gb-green);
+  padding: 13px 28px;
+  font-size: .95rem;
+  font-weight: 600;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: var(--transition);
+  font-family: var(--font);
+}
+.btn--submit:hover { background: var(--gb-green-dark); border-color: var(--gb-green-dark); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(56,142,60,.3); }
+.form-note { font-size: .8rem; color: var(--gb-graphite-l); text-align: center; margin-top: 4px; }
+
+/* Footer */
+.footer__nav { display: flex; gap: 48px; }
+.footer__col { display: flex; flex-direction: column; gap: 8px; }
+.footer__col strong { color: rgba(255,255,255,.6); font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+.footer__col a { color: rgba(255,255,255,.4); font-size: .83rem; transition: var(--transition); }
+.footer__col a:hover { color: var(--gb-lime); }
+.footer__social { display: flex; gap: 12px; margin-top: 14px; }
+.footer__social a { color: rgba(255,255,255,.4); transition: var(--transition); }
+.footer__social a:hover { color: var(--gb-lime); }
 
 /* ===== FOOTER ===== */
-.footer { background: #102a13; padding: 40px 0 24px; }
+.footer { background: #102a13; padding: 56px 0 24px; }
 .footer__inner {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  margin-bottom: 32px;
+  gap: 48px;
+  margin-bottom: 40px;
 }
-.footer__brand p { color: rgba(255,255,255,.45); font-size: .83rem; margin-top: 8px; }
-.footer__links { display: flex; gap: 28px; }
-.footer__links a { color: rgba(255,255,255,.45); font-size: .85rem; transition: var(--transition); }
-.footer__links a:hover { color: var(--gb-lime); }
+.footer__brand p { color: rgba(255,255,255,.4); font-size: .83rem; margin-top: 8px; max-width: 200px; }
 .footer__bottom {
-  border-top: 1px solid rgba(255,255,255,.1);
+  border-top: 1px solid rgba(255,255,255,.08);
   padding-top: 24px;
   text-align: center;
 }
-.footer__bottom p { color: rgba(255,255,255,.3); font-size: .78rem; }
+.footer__bottom p { color: rgba(255,255,255,.25); font-size: .78rem; }
 
 /* ===== WHATSAPP FLOAT ===== */
 .whatsapp-float {
@@ -679,7 +723,9 @@ ul  { list-style: none; }
   .cases__grid { grid-template-columns: 1fr; }
   .case-card--wide { grid-column: auto; display: block; }
   .case-card--wide .case-card__image { height: 200px; }
-  .contato__inner { grid-template-columns: 1fr; gap: 48px; }
+  .contato__inner { grid-template-columns: 1fr; gap: 40px; }
+  .footer__inner { flex-direction: column; gap: 32px; }
+  .footer__nav { flex-wrap: wrap; gap: 32px; }
 }
 
 @media (max-width: 768px) {
@@ -709,7 +755,8 @@ ul  { list-style: none; }
   .footer__links { flex-wrap: wrap; justify-content: center; gap: 16px; }
   .hero__visual { display: none; }
   .hero__grid { grid-template-columns: 1fr; }
-  .contato__cta-wrap { width: 100%; }
+  .contato__form-wrap { width: 100%; }
+  .form-row { grid-template-columns: 1fr; }
   .whatsapp-float { bottom: 20px; right: 20px; width: 50px; height: 50px; }
 }
 
