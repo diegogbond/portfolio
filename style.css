@@ -555,6 +555,47 @@ ul  { list-style: none; }
   border-radius: 100px;
 }
 
+/* ===== EQUIPE ===== */
+.equipe { background: var(--white); }
+.equipe__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.membro-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 28px 24px;
+  background: var(--gb-offwhite);
+  border: 1px solid var(--gb-gray-mid);
+  border-radius: var(--radius-lg);
+  min-width: 140px;
+  transition: var(--transition);
+}
+.membro-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--gb-green); }
+.membro-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--gb-green-deep), var(--gb-green));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: .03em;
+}
+.membro-card strong {
+  font-size: .88rem;
+  font-weight: 700;
+  color: var(--gb-graphite);
+  text-align: center;
+}
+
 /* ===== CONTATO ===== */
 .contato { background: var(--gb-graphite); color: var(--white); }
 .contato__inner {
